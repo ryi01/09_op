@@ -6,20 +6,15 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
-	int grade[5];
-	int score[5];
+	int a[5] = {1, 2, 3, 4, 5};
+	int b[5] = {1, 2, 3, 4, 5};
 	
 	for(i=0;i<5;i++)
 	{
-		grade[i]=rand()%100;
-	}
-	for(i=0;i<5;i++)
-	{
-		score[i]=grade[i];
-	}
-	for(i=0;i<5;i++)
-	{
-		printf("score[%d] = %d\n", i, score[i]);
+		if(a[i] != b[i])
+		{
+			printf("%i is different\n", i);
+		}
 	}
 	
 	return 0;
